@@ -25,3 +25,12 @@ section {
 .start {
     padding-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+    #home section {
+        padding : 1rem, 1rem;
+        width : 60%;
+        height : 100%;
+        margin-left : 20px;
+    }
+}

@@ -1,0 +1,82 @@
+[
+    {
+      "question": "What is the derivative of Acceleration with respect to time?",
+      "optionA": "Shift",
+      "optionB": "Jerk",
+      "optionC": "Bump",
+      "optionD": "Slide",
+      "answer": "Jerk"
+    },
+    {
+      "question": "What is the approximate value of mathematical constant e?",
+      "optionA": 3.14,
+      "optionB": 2.72,
+      "optionC": 1.62,
+      "optionD": 1.41,
+      "answer": 2.72
+    },
+    {
+      "question": "How many zeptometres are inside one femtometre?",
+      "optionA": 10,
+      "optionB": "1,000,000,000",
+      "optionC": "1,000,000",
+      "optionD": 1000,
+      "answer": "1,000,000"
+    },
+    {
+      "question": "The decimal number 31 in hexadecimal would be what?",
+      "optionA": "3D",
+      "optionB": "2E",
+      "optionC": "1F",
+      "optionD": "1B",
+      "answer": "1F"
+    },
+    {
+      "question": "What is the plane curve proposed by Descartes to challenge Fermat&#039;s extremum-finding techniques called?",
+      "optionA": "Folium of Descartes",
+      "optionB": "Elliptic Paraboloid of Descartes",
+      "optionC": "Cartesian Coordinates",
+      "optionD": "Descarte&#039;s Helicoid",
+      "answer": "Folium of Descartes"
+    },
+    {
+      "question": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+      "optionA": "1.58 x 10^20",
+      "optionB": "1.58 x 10^22",
+      "optionC": "1.58 x  10^18",
+      "optionD": "1.58 x 10^24",
+      "answer": "1.58 x 10^20"
+    },
+    {
+      "question": "Which of the following famous mathematicians died in a duel at the age of 20?",
+      "optionA": "Abel",
+      "optionB": "Euler",
+      "optionC": "Gauss",
+      "optionD": "Galois",
+      "answer": "Galois"
+    },
+    {
+      "question": "Which of the following mathematicians made major contributions to game theory?",
+      "optionA": "Carl Friedrich Gauss",
+      "optionB": "Leonhard Euler",
+      "optionC": "Stefan Banach",
+      "optionD": "John Von Neumann",
+      "answer": "John Von Neumann"
+    },
+    {
+      "question": "The notion of a &quot;set that contains all sets which do not contain themselves&quot; is a paradoxical idea attributed to which English philospher?",
+      "optionA": "Francis Bacon",
+      "optionB": "Bertrand Russel",
+      "optionC": "John Locke",
+      "optionD": "Alfred North Whitehead",
+      "answer": "Bertrand Russel"
+    },
+    {
+      "question": "What is the fourth digit of &pi;?",
+      "optionA": 2,
+      "optionB": 1,
+      "optionC": 3,
+      "optionD": 4,
+      "answer": 1
+    }
+  ]

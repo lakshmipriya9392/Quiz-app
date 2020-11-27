@@ -1,0 +1,68 @@
+.quiz-summary {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.summaryTitle {
+        color: #57b846;
+        text-align : center;
+        font-size: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    .score {
+        color: #1da1f2;
+        text-align: center;
+    }
+
+    .remark {
+        color: lighten(#333, 10%);
+        text-align: center;
+    }
+
+    .stats {
+        background-color: #f8f8f8;
+        max-width: 50%;
+        padding:1.5rem 2rem 2rem 2rem;
+        margin-left: 25%;
+    }
+
+    .stats h4, .stats h2 {
+        text-align: center;
+    }
+
+    .stats .stat {
+        color: #333;
+        font-size: 1rem;
+    }
+
+    section ul {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+  .buttons {
+      float : right;
+  }
+
+    .no-stats {
+        color: #333;
+        margin: 7rem auto;
+    }
+
+
+@media (max-width: 768px) {
+    .quiz-summary {
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    div.container.stats {
+        margin: 0;
+        padding: 1.5rem;
+        max-width: 100%;
+        width: 100%;
+        
+    }
+}

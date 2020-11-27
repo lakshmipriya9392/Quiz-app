@@ -1,11 +1,23 @@
+
+.category{
+    background-image : url('../../assests/brett-jordan-07vc-HBRk0c-unsplash.jpg');
+    background-size : cover;
+    background-position: left;
+    height : 100vh;
+    width : 100vw;
+    justify-content: space-around;
+  }
 ul li {
     display: flex;
 
 }
 .title {
-    font-size: 40px;
-    
-}
-.category{
-    background-image: url('../../assests/category_img.jpg.jpg');
+    font-size: 30px;
+    margin-left : 40px;
+    margin-top : 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    width : 50%;
+    text-align: left;
+
 }

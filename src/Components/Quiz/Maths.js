@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Helmet } from "react-helmet";
-import questions from "../../assests/gk_question.json";
+import questions from "../../assests/Mathematics.json";
 import isEmpty from "../../utils/is-empty";
 import { Button } from "@material-ui/core";
 import "./Quiz.css";
@@ -24,8 +24,7 @@ class Quiz extends Component {
       correctAnswers: 0,
       wrongAnswers: 0,
       time: {},
-      previousButtonDisabled: false,
-      nextButtonDisabled: false
+    
       
     };
     this.interval = null
@@ -63,7 +62,7 @@ displayQuestions = (questions = this.state.questions, currentQuestion, nextQuest
           previousQuestion,
           numberOfQuestions: questions.length,
           answer,
-          // previousRandomNumbers: []
+         
       });
   }     
 };
@@ -71,7 +70,7 @@ displayQuestions = (questions = this.state.questions, currentQuestion, nextQuest
 handleNextButtonClick = () => {
   if (this.state.nextQuestion !== undefined) {
       this.setState(prevState => ({
-          currentQuestionIndex: prevState.currentQuestionIndex + 1
+          currentQuestionIndex: prevState.currentQuestionIndex - 1
       }), () => {
           this.displayQuestions(this.state.state, this.state.currentQuestion, this.state.nextQuestion, this.state.previousQuestion);
       });
@@ -98,8 +97,9 @@ handleQuitButtonClick = () => {
 
   handleClick = (e) => {
      
-        if (e.target.innerHTML.toLowerCase() === this.state.answer.toLowerCase()) {
-         this.correctAnswer();
+        if (e.target.innerHTML === this.state.answer) {
+         
+            this.correctAnswer();
           } else {
            
             this.wrongAnswer();
