@@ -1,0 +1,11 @@
+ul li {
+    display: flex;
+
+}
+.title {
+    font-size: 40px;
+    
+}
+.category{
+    background-image: url('../../assests/category_img.jpg.jpg');
+}
