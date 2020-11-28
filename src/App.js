@@ -7,6 +7,8 @@ import Quiz from  './Components/Quiz/Quiz'
 import Maths from './Components/Quiz/Maths'
 import Sports from './Components/Quiz/Sports'
 import Summary from './Components/Summary/Summary'
+import Login from './Components/Login/Login'
+import Register from './Components/SignUp/SignUp'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Route path = "/play/Maths" exact component = {Maths} />
       <Route path = "/play/Sports" exact component = {Sports} />
       <Route path = "/play/quizSummary" exact component = {Summary} />
+      <Route path = "/login" exact component = {Login} />
+      <Route path = "/register" exact component = {Register} />
     </Router>
   );
 }

@@ -26,7 +26,6 @@ class Quiz extends Component {
       time: {},
       previousButtonDisabled: false,
       nextButtonDisabled: false
-      
     };
     this.interval = null
   }
@@ -49,6 +48,9 @@ class Quiz extends Component {
   componentWillUnmount () {
     clearInterval(this.interval);
 }
+
+
+
 displayQuestions = (questions = this.state.questions, currentQuestion, nextQuestion, previousQuestion) => {
   let { currentQuestionIndex } = this.state;   
   if (!isEmpty(this.state.questions)) {
@@ -63,7 +65,7 @@ displayQuestions = (questions = this.state.questions, currentQuestion, nextQuest
           previousQuestion,
           numberOfQuestions: questions.length,
           answer,
-          // previousRandomNumbers: []
+          
       });
   }     
 };

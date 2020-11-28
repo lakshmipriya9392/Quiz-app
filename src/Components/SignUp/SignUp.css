@@ -1,0 +1,14 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+.signup {
+    background-image: url("../../assests/m-liisanantti-N1X5C0qqcwQ-unsplash\ \(1\).jpg");
+    background-size : cover;
+    background-position: left;
+    height : 85vh;
+    width : 100vw;
+    justify-content: space-around;
+    
+}
