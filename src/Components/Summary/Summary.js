@@ -82,7 +82,7 @@ class QuizSummary extends Component {
                             <li>
                             <Button
                             style={{ float: "center", marginBottom: '10px', height : '30px', fontSize : 'medium'}}
-                        href = "/"
+                        href = "/play/category"
                         variant="contained"
                         size = "large"
                         color="secondary">
@@ -108,7 +108,7 @@ class QuizSummary extends Component {
                         </li>
                         <li>
                         <Button
-                        href = "/"
+                        href = "/play/category"
                         variant="contained"
                         color="secondary">
                         Back to Home

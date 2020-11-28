@@ -93,7 +93,7 @@ handlePreviousButtonClick = () => {
 handleQuitButtonClick = () => {
 
   if (window.confirm('Are you sure you want to quit?')) {
-      this.props.history.push('/');
+      this.props.history.push('/play/category');
   }
 };
 
@@ -204,7 +204,7 @@ handleDisableButton = () => {
 }
 
 endGame = () => {
-  alert('Quiz has eneded!');
+  alert('Quiz ended!');
   const { state } = this;
   const playerStats = {
       score: state.score,

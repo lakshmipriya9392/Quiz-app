@@ -70,7 +70,7 @@ displayQuestions = (questions = this.state.questions, currentQuestion, nextQuest
 handleNextButtonClick = () => {
   if (this.state.nextQuestion !== undefined) {
       this.setState(prevState => ({
-          currentQuestionIndex: prevState.currentQuestionIndex - 1
+          currentQuestionIndex: prevState.currentQuestionIndex + 1
       }), () => {
           this.displayQuestions(this.state.state, this.state.currentQuestion, this.state.nextQuestion, this.state.previousQuestion);
       });
@@ -90,7 +90,7 @@ handlePreviousButtonClick = () => {
 handleQuitButtonClick = () => {
 
   if (window.confirm('Are you sure you want to quit?')) {
-      this.props.history.push('/');
+      this.props.history.push('/play/category');
   }
 };
 
@@ -202,7 +202,7 @@ handleDisableButton = () => {
 }
 
 endGame = () => {
-  alert('Quiz has eneded!');
+  alert('Quiz ended!');
   const { state } = this;
   const playerStats = {
       score: state.score,

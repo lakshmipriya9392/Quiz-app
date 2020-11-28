@@ -3,6 +3,7 @@ import { Button } from "@material-ui/core"
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles'
 import './Category.css'
+import firebase from '../Firebase/firebase'
 
 const styles = {
     root: {
@@ -15,6 +16,10 @@ const styles = {
       width : '80px',
       padding : '0 70px',
     },
+    signout : {
+        background : "#fd3a69",
+        marginLeft : "70%"
+    }
   };
 const Category = (props) => {
 
@@ -23,6 +28,10 @@ const Category = (props) => {
     return (
 <div >
     <section className = "category">
+    <div className = "signout">
+    { firebase.isInitialized() ?
+        <Button onClick = {logout} variant = "contained" className = {classes.signout} color = "secondary">Signout</Button> : null }
+    </div>
     <h1 className = "title">Select Category</h1>
         <ul>
             <li>
@@ -31,14 +40,22 @@ const Category = (props) => {
             <Button href = '/play/Sports' className = {classes.root} variant="contained" color="secondary">Sports</Button>  
             </li>
         </ul>
+      
     </section>
+  
 </div>
     );
+
+    async function logout() {
+    await firebase.logout()
+    props.history.push('/')
+    
+  } 
 }
 Category.propTypes = {
     classes: PropTypes.object.isRequired,
     className: PropTypes.string
 }
-   
+
 
 export default withStyles(styles)(Category);
